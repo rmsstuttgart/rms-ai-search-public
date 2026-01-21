@@ -7,23 +7,37 @@ For an AI-Powered search example see https://rm-solutions.de/suche/
 
 ## Install
 
+Add GIT-Repository to composer sources in composer.json:
+
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/rmsstuttgart/rms-ai-search-public.git"
+    }
+],
+
+```
+
+install extension with composer:
 ```composer require rms/rms-ai-search```
 
+## Template
 
-## Add your own templates
+Include the extension template in your template (Include TypoScript sets). Then you can overwrite the extension template and settings similar to any other TYPO3 extension.
 
-1 -  Add this to your main templates constants
+**Add this to your main templates constants**
 
 ```
 plugin.tx_rmsaisearch {
     view {
-        templateRootPath = EXT:my_main_template/Resources/Private/ext/AiSearch/Templates/
+        templateRootPath = EXT:your_template/Resources/Private/ext/AiSearch/Templates/
     }
 }
 ```
 
-2 - Add the contents of 
+Add the contents of
 
-**EXT:rms-ai-search/Resources/Private/Templates/Search/Search.html** to **EXT:my_main_template/Resources/Private/ext/AiSearch/Templates/Search/Search.html** and modify structure and classes to match your frontend.
+EXT:rms-ai-search/Resources/Private/Templates/Search/Search.html to EXT:your_template/Resources/Private/ext/AiSearch/Templates/Search/Search.html and modify structure and classes to match your frontend.
 
 Be aware that some classes / ids are needed for the dynamic content creation with javascript to display the search results and links lists.
