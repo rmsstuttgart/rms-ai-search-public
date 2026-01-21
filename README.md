@@ -1,4 +1,4 @@
-# RMS AI Search
+****# RMS AI Search
 
 This TYPO3 extension provides AI-powered search functionality.
 It can connect your search to https://chat.rm-solutions.de/
@@ -22,6 +22,8 @@ plugin.tx_rmsaisearch {
 }
 ```
 
-2 - Add the contents of the EXT:rms-ai-search/Resources/Private/Templates/Search/Search.html file to EXT:my_main_template/Resources/Private/ext/AiSearch/Templates/Search/Search.html and modify structure and classes to match your frontend.
+2 - Add the contents of 
+
+**EXT:rms-ai-search/Resources/Private/Templates/Search/Search.html** to **EXT:my_main_template/Resources/Private/ext/AiSearch/Templates/Search/Search.html** and modify structure and classes to match your frontend.
 
 Be aware that some classes / ids are needed for the dynamic content creation with javascript to display the search results and links lists.
