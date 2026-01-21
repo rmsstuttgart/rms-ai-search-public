@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-01-01T00:00:00Z"
+        product-name="rms_ai_search">
+        <header />
+        <body>
+            <!-- Plugin dropdown label -->
+            <trans-unit id="tt_content.list_type.rmsaisearch_search">
+                <source>AI Search</source>
+            </trans-unit>
+            <!-- Content Element CType label -->
+            <trans-unit id="tt_content.CType_rmsaisearch_search">
+                <source>RMS AI Search</source>
+            </trans-unit>
+
+            <!-- Wizard labels -->
+            <trans-unit id="tx_rmsaisearch_search.name">
+                <source>AI Search</source>
+            </trans-unit>
+            <trans-unit id="tx_rmsaisearch_search.description">
+                <source>AI-powered search functionality - connect TYPO3 to https://chat.rm-solutions.de/</source>
+            </trans-unit>
+            <trans-unit id="tt_content.aisearch_url_hash">
+                <source>Chatbot URL Hash - Siehe Chatbot Backend</source>
+            </trans-unit>
+            <trans-unit id="tt_content.aisearch_api_host">
+                <source>Chatbot API Host - ohne trailing Slash (z.B. https://chat.rm-solutions.de)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.aisearch_prompt_template">
+                <source>Chatbot Prompt Template (z.B. ai_search, aaa_default, shortanswer,
+                    frakturaexpert, medicaladvisor_template)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.aisearch_list_all_sources">
+                <source>Alle Quellen anzeigen (nur ein Link pro Quelle wenn inaktiv)</source>
+            </trans-unit>
+            <!-- FlexForm labels -->
+            <trans-unit id="tx_rmsaisearch_search.flexform.sheet_general">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="tx_rmsaisearch_search.flexform.url_hash">
+                <source>URL Hash</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

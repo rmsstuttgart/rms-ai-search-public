@@ -1,0 +1,84 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+	<div class="rms_ai_search_container">
+
+		<f:asset.script priority="false" identifier="aisearch_markdownitjs"
+			src="EXT:rms_ai_search/Resources/Public/dist/js/markdown-it.min.js" />
+		<f:asset.script priority="false" identifier="aisearch_chatjs"
+			src="EXT:rms_ai_search/Resources/Public/dist/js/app.min.js" />
+		<f:asset.css identifier="aisearch_chatcss" href="EXT:rms_ai_search/Resources/Public/dist/css/app.min.css" />
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				<form id="ai-search-form" onsubmit="return false;">
+					<div class="mb-3">
+						<p>{f:translate(key: 'searchform.subline', extensionName: 'rms_ai_search')}</p>
+						<div class="input-group">
+							<input type="search" class="form-control" id="ai-search-question"
+								aria-describedby="questionHelp"
+								placeholder="{f:translate(key: 'searchform.search_input_placeholder', extensionName: 'rms_ai_search')}"
+								value="{query}" />
+							<button type="submit" id="search-form-submit-btn" class="btn btn-primary"
+								onclick="streamChatAnswer(document.getElementById('ai-search-question').value, '{aisearch_url_hash}', '{aisearch_api_host}', '{aisearch_prompt_template}', '{aisearch_list_all_sources}');">
+								{f:translate(key: 'searchform.submit_button_label', extensionName: 'rms_ai_search')}
+							</button>
+						</div>
+					</div>
+				</form>
+
+				<div class="result-container mb-5">
+					<f:image src="EXT:rms_ai_search/Resources/Public/img/loader.gif" alt="loading"
+						class="inline-loader hidden" id="loading-indicator" />
+					<div class="hidden hidden_until_stream_starts mt-5 mb-2">
+						<span class="h4">
+							{f:translate(key: 'searchform.result_label', extensionName: 'rms_ai_search')}
+						</span>
+					</div>
+					<div class="p-4 mb-4 background-grey shadow bordered hidden_until_stream_starts hidden">
+						<div id="answer" class="mb-4"></div>
+					</div>
+					<div class="hidden_until_stream_finish hidden mt-4">
+						<span class="h4">
+							{f:translate(key: 'searchform.result_links_label', extensionName: 'rms_ai_search')}
+						</span>
+						<div id="source_documents" class="mt-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<f:comment>
+			<!--
+			* Templates for dynamic content - hidden and then cloned and used by JavaScript
+			-->
+		</f:comment>
+		<template id="template-result-item">
+			<div class="result-item mt-2 p-4 mb-4 background-grey shadow bordered">
+				<strong>
+					<a href="" target="_blank" rel="noopener noreferrer" class="no-color result-item-link"
+						data-field="url"></a>
+				</strong>
+				<div class="result-snippet mt-3" data-field="snippet"></div>
+				<a href="" target="_blank" rel="noopener noreferrer" class="mt-3 fw-bold result-item-more"
+					data-field="url">
+					{f:translate(key: 'searchform.more_link_label', extensionName: 'rms_ai_search')}
+				</a>
+			</div>
+		</template>
+
+		<template id="template-source-documents-container">
+			<div class="rms-chatbot-sources">
+				<div class="result-items-container" data-field="items"></div>
+			</div>
+		</template>
+
+		<template id="template-error-message">
+			<span style="color:red;" data-field="message"></span>
+		</template>
+	</div>
+</f:section>
+
+
+</html>
