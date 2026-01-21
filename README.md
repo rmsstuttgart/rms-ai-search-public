@@ -1,4 +1,4 @@
-****# RMS AI Search
+# RMS AI Search
 
 This TYPO3 extension provides AI-powered search functionality.
 It can connect your search to https://chat.rm-solutions.de/
