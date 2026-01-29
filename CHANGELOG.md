@@ -1,3 +1,7 @@
+# v1.1.1
+
+Update README.md: Change repository type from 'vcs' to 'git'
+
 # v1.1.0
 
 ## Breaking changes
