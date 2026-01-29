@@ -1,0 +1,17 @@
+#tt_content.list.20.rmsaisearch_search =< plugin.tx_rmsaisearch_search
+#tt_content.list.20.rms_ai_search_search =< plugin.tx_rmsaisearch_search
+
+plugin.tx_rmsaisearch_search {
+    view {
+        templateRootPaths.0 = EXT:rms_ai_search/Resources/Private/Templates/
+        templateRootPaths.10 = {$plugin.tx_rmsaisearch.view.templateRootPath}
+        partialRootPaths.0 = EXT:rms_ai_search/Resources/Private/Partials/
+        partialRootPaths.10 = {$plugin.tx_rmsaisearch.view.partialRootPath}
+        layoutRootPaths.0 = EXT:rms_ai_search/Resources/Private/Layouts/
+        layoutRootPaths.10 = {$plugin.tx_rmsaisearch.view.layoutRootPath}
+    }
+    settings {
+        listPid = 0
+        singlePid = 0
+    }
+}
