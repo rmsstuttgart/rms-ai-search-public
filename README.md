@@ -12,7 +12,7 @@ Add GIT-Repository to composer sources in composer.json:
 ```
 "repositories": [
     {
-        "type": "git",
+        "type": "vcs",
         "url": "https://github.com/rmsstuttgart/rms-ai-search-public.git"
     }
 ],
