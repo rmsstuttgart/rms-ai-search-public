@@ -1,0 +1,45 @@
+{
+    "name": "rmsstuttgart/rms-ai-search",
+    "type": "typo3-cms-extension",
+    "description": "AI Search extension for TYPO3 - connect your TYPO3 to https://chat.rm-solutions.de/",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Michael Kettel",
+            "role": "Developer",
+            "homepage": "https://rm-solutions.de"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "typo3/cms-core": "^12.4 || ^13.4",
+        "typo3/cms-backend": "^12.4 || ^13.4",
+        "typo3/cms-frontend": "^12.4 || ^13.4",
+        "typo3/cms-extbase": "^12.4 || ^13.4",
+        "fluidtypo3/vhs": "^7.1 || ^8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1",
+        "phpstan/phpstan-strict-rules": "^1.4",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "squizlabs/php_codesniffer": "^3.7",
+        "cakephp/cakephp-codesniffer": "^5.0",
+        "ssch/typo3-rector": "^2.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rmsstuttgart\\RmsAiSearch\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "rms_ai_search"
+        }
+    }
+}

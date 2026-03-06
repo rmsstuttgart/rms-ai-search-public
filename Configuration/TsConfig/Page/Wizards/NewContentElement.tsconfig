@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+    plugins {
+        elements {
+            rmsaisearch_search {
+                iconIdentifier = content-plugin
+                title = LLL:EXT:rms_ai_search/Resources/Private/Language/locallang_db.xlf:tx_rmsaisearch_search.name
+                description = LLL:EXT:rms_ai_search/Resources/Private/Language/locallang_db.xlf:tx_rmsaisearch_search.description
+                tt_content_defValues {
+                    CType = list
+                    list_type = rmsaisearch_search
+                }
+            }
+        }
+        show := addToList(rmsaisearch_search)
+    }
+}
