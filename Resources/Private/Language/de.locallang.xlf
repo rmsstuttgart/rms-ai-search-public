@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages"
+        date="2014-04-28T15:17:11Z" product-name="rms_ai_search">
+        <header />
+        <body>
+            <trans-unit id="searchform.subline" approved="yes">
+                <target>Finden statt Suchen: Präzise Antworten in jeder Sprache</target>
+            </trans-unit>
+            <trans-unit id="searchform.search_input_placeholder" approved="yes">
+                <target>Geben Sie Ihre Frage ein</target>
+            </trans-unit>
+            <trans-unit id="searchform.submit_button_label" approved="yes">
+                <target>Suche starten</target>
+            </trans-unit>
+            <trans-unit id="searchform.result_label" approved="yes">
+                <target>Übersicht mit KI:</target>
+            </trans-unit>
+            <trans-unit id="searchform.result_links_label" approved="yes">
+                <target>Ergebnisse &amp; Quellen:</target>
+            </trans-unit>
+            <trans-unit id="searchform.more_link_label" approved="yes">
+                <target>Zum Artikel</target>
+            </trans-unit>
+            <trans-unit id="searchform.complete_answer_show_more_link_label" approved="yes">
+                <target>Komplette Antwort anzeigen</target>
+            </trans-unit>
+            <trans-unit id="searchform.complete_answer_show_less_link" approved="yes">
+                <target>Weniger anzeigen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext"
+        original="EXT:rms_ai_search/Resources/Private/Language/locallang.xlf"
+        date="2022-07-27T08:59:36Z" product-name="rms_ai_search">
+        <header />
+        <body>
+            <trans-unit id="searchform.subline" approved="yes">
+                <source>Find instead of search: Precise answers in every language</source>
+            </trans-unit>
+            <trans-unit id="searchform.search_input_placeholder" approved="yes">
+                <source>Enter your question</source>
+            </trans-unit>
+            <trans-unit id="searchform.submit_button_label" approved="yes">
+                <source>Start search</source>
+            </trans-unit>
+            <trans-unit id="searchform.result_label" approved="yes">
+                <source>AI-Overview:</source>
+            </trans-unit>
+            <trans-unit id="searchform.result_links_label" approved="yes">
+                <source>Results &amp; Sources:</source>
+            </trans-unit>
+            <trans-unit id="searchform.more_link_label" approved="yes">
+                <source>Open article</source>
+            </trans-unit>
+            <trans-unit id="searchform.complete_answer_show_more_link_label" approved="yes">
+                <source>Show complete answer</source>
+            </trans-unit>
+            <trans-unit id="searchform.complete_answer_show_less_link" approved="yes">
+                <source>Show less</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,23 @@
+// Frontend rendering
+tt_content.rmsaisearch_search = USER
+tt_content.rmsaisearch_search {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = RmsAiSearch
+    pluginName = Search
+    vendorName = Rmsstuttgart
+}
+
+plugin.tx_rmsaisearch_search {
+    view {
+        templateRootPaths.0 = EXT:rms_ai_search/Resources/Private/Templates/
+        templateRootPaths.10 = {$plugin.tx_rmsaisearch.view.templateRootPath}
+        partialRootPaths.0 = EXT:rms_ai_search/Resources/Private/Partials/
+        partialRootPaths.10 = {$plugin.tx_rmsaisearch.view.partialRootPath}
+        layoutRootPaths.0 = EXT:rms_ai_search/Resources/Private/Layouts/
+        layoutRootPaths.10 = {$plugin.tx_rmsaisearch.view.layoutRootPath}
+    }
+    settings {
+        listPid = 0
+        singlePid = 0
+    }
+}

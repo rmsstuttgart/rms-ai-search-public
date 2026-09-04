@@ -1,0 +1,14 @@
+plugin.tx_rmsaisearch {
+	view {
+		# cat=plugin.tx_rmsaisearch/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:rms_ai_search/Resources/Private/Templates/
+		# cat=plugin.tx_rmsaisearch/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:rms_ai_search/Resources/Private/Partials/
+		# cat=plugin.tx_rmsaisearch/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:rms_ai_search/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_rmsaisearch//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
