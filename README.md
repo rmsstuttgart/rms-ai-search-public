@@ -40,8 +40,13 @@ Be aware that some classes / ids are needed for the dynamic content creation wit
 
 # Links to static assets for custom integrations of the search form.
 
-Replace the folder name (i.e. 1.1.0) with the version you want to use.
+Replace the folder name (i.e. 2.1.1) with the version you want to use.
 See CHANGELOG.md for releases and details
+
+**v2.1.1**
+- https://chat.rm-solutions.de/ext-ai-search-assets/2.1.1/js/app.min.js
+- https://chat.rm-solutions.de/ext-ai-search-assets/2.1.1/js/markdown-it.min.js
+- https://chat.rm-solutions.de/ext-ai-search-assets/2.1.1/css/app.min.css
 
 **v1.1.0**
 - https://chat.rm-solutions.de/ext-ai-search-assets/1.1.0/js/app.min.js
