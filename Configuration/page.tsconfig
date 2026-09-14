@@ -1,0 +1,15 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+    elements {
+        rmsaisearch_search {
+            iconIdentifier = rms_ai_search_icon_png
+            title = RMS AI Search
+            description = RMS AI Search - AI powered search for your TYPO3 website
+            tt_content_defValues {
+                CType = list
+                list_type = rmsaisearch_search
+                #CType = rmsaisearch_search
+            }
+        }
+    }
+    show := addToList(rmsaisearch_search)
+}
